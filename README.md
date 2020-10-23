@@ -8,4 +8,7 @@ Roles: Risa - Model
 	Aidan - UI/Control
 	Michael - (mostly)UI/Model 
 	Val - Control (mostly)
+	
+	Week 1 Goal :
+	    
 
