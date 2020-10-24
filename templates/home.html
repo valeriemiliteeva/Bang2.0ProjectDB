@@ -1,24 +1,136 @@
-{% extends "base.html" %}
+<html>
 
-{% block head %}
-<title>{{name}}| Home </title>
-{% endblock %}
+<head>
+    <title>Bang 2.0 | Val, Aidan, Risa, Mike </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-{% block script %}
+
+</head>
+
+
+<body>
+<!-- navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bang2.0</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Journals and Repos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://padlet.com/risaiwazaki55/ox7mw5z9syhnyw7w">Aidan, Risa, and Val's Journal</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="container-fluid">
+
+    <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
+
+        <div class="col-2" style="text-align: right;">
+            <h5>Bang 2.0</h5>
+
+            <a href="https://github.com/valeriemiliteeva" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/NighthawkCoding" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+
+    </div>
+
+
+    <div class="product" style="margin-top: 5%;">
+        <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
+
+            <div class="col-8" >
+                <h1>Bang2.0's Project Site</h1>
+            </div>
+
+        </div>
+
+        <div class="row" style="padding-left: 10%;">
+            <div class="col-4">
+                <a href="https://padlet.com/valerie_militeeva/wwpgm5b32jsbycgd" class="btn">OLD Project Padlet</a>
+            </div>
+
+            <div class="col-4">
+                <a href="https://repl.it/@ValerieMiliteev/SnakeProj" class="btn">Snake  Game</a>
+            </div>
+
+            <div class="col-4">
+                <a href="https://docs.google.com/document/d/1LV2IERKDhAfi7kswKffHq5b5AHQAvVvQp6e05W5DJe8/edit?usp=sharing" class="btn">NEW Project Plan</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="product" style="margin-top: 5%;">
+        <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
+
+            <div class="col-8" >
+                <h1>Bang 2.0 Journals and Repos</h1>
+            </div>
+
+        </div>
+
+        <div class="row" style="padding-left: 10%;">
+            <div class="col-4">
+                <a href="https://padlet.com/risaiwazaki55/ox7mw5z9syhnyw7w" class="btn">Aidan, Risa, and Val's Journal</a>
+            </div>
+
+            <div class="col-4">
+                <a href="https://padlet.com/anthonyw54465/r33ggkw4i7o9xumt" class="btn">Anthony and Michael's Journal</a>
+            </div>
+
+            <div class="col-4">
+                <a href="https://repl.it/join/thdlzlls-valeriemiliteev" class="btn">Collaborative Playground</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
 <script src="https://threejs.org/build/three.js"></script>
-<script src="{{ url_for('static', filename='vanta.birds.min.js') }}"></script>
+<script src="{{ url_for('static', filename= 'vanta.fog.min.js') }}"></script>
 <script>
-
-    VANTA.BIRDS({
-      el: "body",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      wingSpan: 40.0
+  VANTA.FOG({
+    el: "body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x63ebd4,
+    midtoneColor: 0x3f7bc,
+    lowlightColor: 0x321ff,
+    baseColor: 0xffffff,
+    blurFactor: 0.53,
+    speed: 4.00,
+    zoom: 0.90
     })
-    </script>
-{% endblock %}
+  </script>
+
+</html>
