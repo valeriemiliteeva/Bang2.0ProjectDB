@@ -9,6 +9,6 @@ Roles: Risa - Model
 	Michael - (mostly)UI/Model 
 	Val - Control (mostly)
 	
-	Week 1 Goal :
+	Week 1 Goal : Create a schedule that helps us stay on track and do some additional research on html.
 	    
 
