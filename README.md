@@ -10,5 +10,5 @@ Roles: Risa - Model
 	Val - Control (mostly)
 	
 	Week 1 Goal : Create a schedule that helps us stay on track and do some additional research on html.
-	    
+	    we also want to find an efficient way to collect data without having to link an actual database, and still be able to collect info from different periods and groups.
 
