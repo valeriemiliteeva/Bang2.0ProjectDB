@@ -26,6 +26,10 @@ def hello_route():
 def flask_route():
     return render_template("flask.html", projects=data.setup())
 
+# connects /repo path of server to render repo.html
+@app.route('/repo/')
+def repo_route():
+    return render_template("repo.html", projects=data.setup())
 
 if __name__ == "__main__":
     # runs the application on the repl development server
