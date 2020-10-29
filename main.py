@@ -1,4 +1,4 @@
-import projects  # projects definitions are placed in different file
+import data  # projects definitions are placed in different file
 
 
 # https://flask.palletsprojects.com/en/1.1.x/api/
@@ -12,19 +12,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_route():
-    return render_template("home.html", projects=projects.setup())
+    return render_template("home.html", projects=data.setup())
 
 
 # connects /hello path of server to render hello.html
 @app.route('/hello/')
 def hello_route():
-    return render_template("hello.html", projects=projects.setup())
+    return render_template("hello.html", projects=data.setup())
 
 
 # connects /flask path of server to render flask.html
 @app.route('/flask/')
 def flask_route():
-    return render_template("flask.html", projects=projects.setup())
+    return render_template("flask.html", projects=data.setup())
 
 
 if __name__ == "__main__":

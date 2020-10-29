@@ -1,13 +1,51 @@
+import data  # projects definitions are placed in different file
+
+# https://flask.palletsprojects.com/en/1.1.x/api/
+from flask import Flask, render_template
+def playdata():
+    greeting = "Hey, Hey, Hey!"
+    name = "Valerie Militeeva"
+    age = "16"
+    grade = "Junior"
+    info = {"greeting": greeting, "name": name, "age": age, "grade": grade}
+    return info
+
+def playdata2():
+    greeting = "Hey, Hey, Hey!"
+    name = "Aidan Lin"
+    age = "16"
+    grade = "Junior"
+    info = {"greeting": greeting, "name": name, "age": age, "grade": grade}
+    return info
+
+def playdata3():
+    greeting = "Hey, Hey, Hey!"
+    name = "Michael Iribarren"
+    age = "16"
+    grade = "Junior"
+    info = {"greeting": greeting, "name": name, "age": age, "grade": grade}
+    return info
+
+def playdata4():
+    greeting = "Hey, Hey, Hey!"
+    name = "Aidan Lin"
+    age = "16"
+    grade = "Junior"
+    info = {"greeting": greeting, "name": name, "age": age, "grade": grade}
+    return info
+
+
+def playlist():
+    return [playdata(), playdata2(), playdata3(), playdata4()]
+
 #Data "setup" for Projects
 #next step would be to extract project data from a database
 def setup():
-    #Person Data
-    name = "Nighthawk Coding"
-    github = "https://github.com/nighthawkcoders"
-    linkedin = "https://www.linkedin.com/in/john-mortensen-1021/"
-    youtube = "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber"
+    #Source Data
+    name = "Bang2.0"
+    github = "https://github.com/valeriemiliteeva"
     twitter = "https://twitter.com/NighthawkCoding"
-    source = {"name": name, "github": github, "linkedin": linkedin, "youtube": youtube, "twitter": twitter}
+    source = {"name": name, "github": github, "twitter": twitter}
     #Project Data
     project1 =  "Hello Series"
     projlinks1 = [
@@ -62,5 +100,3 @@ class Projects():
     #project data getter
     def get_projects(self):
         return self.projects
-
-#aidan
