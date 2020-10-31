@@ -14,7 +14,7 @@ Roles: Risa - Model
 
 Grades for Week 8: 
 
-Aidan: 5/5 Great participation and helped me with researching how to pull data from a file. 
+Aidan: 5/5 Great participation and helpeds me with researching how to pull data from a file. 
 Got github working and was able to commit from the first time I explainned it to the group 
 and was very helpful with project running smoothly.
 
