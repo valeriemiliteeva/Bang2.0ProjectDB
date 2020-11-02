@@ -12,7 +12,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_route():
-    return render_template("home.html", projects=data.setup())
+    return '''
+    <html>
+    <head> </head>
+    <body>
+        <h2> Welcome to our flask website! </h2>
+        <p> We are Bang2.0. Our group consists of Aidan, Val, Mike, Anthony, & Risa. <p/>
+    </body>
+    </html>
+    '''
 
 
 # connects /hello path of server to render hello.html
