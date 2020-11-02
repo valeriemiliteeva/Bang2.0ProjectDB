@@ -28,5 +28,6 @@ to explain something twice after explaining it to the group. Will work harder ne
 hope to be more present in the code, not just in discussions.
 
 Val: 5/5 Good participation and I helped navigate the team through transitioning into 
-IntelliJ and I worked hard to answer everyone's questions as well as continuously update 
-the repository with new resources and code.
+IntelliJ and I worked to answer everyone's questions as well as continuously update 
+the repository with new resources and code. I familiarized myself with Jinja and Bootstrap
+features, and found new ideas for next week.
