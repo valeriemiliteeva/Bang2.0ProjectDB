@@ -2,6 +2,7 @@ import data  # projects definitions are placed in different file
 
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
+
 def playdata():
     greeting = "Hey, Hey, Hey!"
     name = "Valerie Militeeva"
@@ -9,6 +10,7 @@ def playdata():
     grade = "Junior"
     info = {"greeting": greeting, "name": name, "age": age, "grade": grade}
     return info
+
 
 def playdata2():
     greeting = "Hey, Hey, Hey!"
@@ -59,6 +61,7 @@ def setup():
         Link("Repl", "https://repl.it/@jmort1021/Python-Web-Portfolio-Series?__cf_chl_jschl_tk__=cff72504752e89d50dea999ce10f859a17ecc294-1603026111-0-AdBP5FO-3nyUc_KVdPlNwvXM4MwUXy1HXHmbiJui1YBnUTPJZ8X4UBZVeYUXrnwRBJVvku9NftGYDWtp8lp4KovKX55R8S4twedzHpa2snwLwoAWaxuc4rgAa2l9J_rWqnNvUNcjJ8-p1V1RuTWV3lIy149lptozqAQdJnGj7PlcJxnu3YH22EXK-jl7bmdQmW9r_9fE1xp8J7sOFS3I1PMgmtoExcDIQSBBTnx1zQsyQGNS6wnuX72MAPnS_x3ZL1ETNRgFbVKpLsFJiR9ED1ErU54wyZYrUxEbZ_txHd7qY1T_s_lE6Ll8jYWHx-GulQ#main.py"),
         Link("Resources", "https://padlet.com/jmortensen7/csptime1_2")
     ]
+
     #Project Objects
     proj1 = Project(project1, projlinks1)
     proj2 = Project(project2, projlinks2)
