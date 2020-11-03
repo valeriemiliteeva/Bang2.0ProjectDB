@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_route():
-    return render_template("base.html", projects=data.setup())
+    return render_template("home.html", projects=data.setup())
 
 
 # connects /hello path of server to render hello.html
