@@ -3,7 +3,7 @@ import data  # projects definitions are placed in different file
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
 
-def playdata():
+def valdata():
     greeting = "Hey, Hey, Hey!"
     name = "Valerie Militeeva"
     age = "16"
@@ -12,7 +12,7 @@ def playdata():
     return info
 
 
-def playdata2():
+def aidandata2():
     greeting = "Hey, Hey, Hey!"
     name = "Aidan Lin"
     age = "16"
@@ -20,7 +20,7 @@ def playdata2():
     info = {"greeting": greeting, "name": name, "age": age, "grade": grade}
     return info
 
-def playdata3():
+def michaeldata3():
     greeting = "Hey, Hey, Hey!"
     name = "Michael Iribarren"
     age = "16"
@@ -28,7 +28,7 @@ def playdata3():
     info = {"greeting": greeting, "name": name, "age": age, "grade": grade}
     return info
 
-def playdata4():
+def risadata4():
     greeting = "Hey, Hey, Hey!"
     name = "Aidan Lin"
     age = "16"
@@ -37,8 +37,8 @@ def playdata4():
     return info
 
 
-def playlist():
-    return [playdata(), playdata2(), playdata3(), playdata4()]
+def alldata():
+    return [valdata(), aidandata2(), micaheldata3(), risadata4()]
 
 #Data "setup" for Projects
 #next step would be to extract project data from a database
